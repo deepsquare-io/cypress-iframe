@@ -8,9 +8,9 @@ npm install -D cypress-iframe
 
 In your `cypress/support/commands.js` file, add the following:
 ```js
-import 'cypress-iframe';
+import 'cypress-iframe'
 // or
-require('cypress-iframe');
+require('cypress-iframe')
 ```
 
 If you're using typescript with cypress, and have not overridden the `types` or `typeRoots` in your tsc compiler options, then everything should work.
