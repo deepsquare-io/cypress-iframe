@@ -1,4 +1,4 @@
-# Cypress iframe
+# Cypress iframe [![install size](https://packagephobia.now.sh/badge?p=cypress-iframe)](https://packagephobia.now.sh/result?p=cypress-iframe)
 Adds iframe support to [Cypress](https://www.cypress.io/).
 
 ## Installation
