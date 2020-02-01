@@ -18,8 +18,24 @@ install:
     paths:
       - node_modules
 
-cypress:
+cypress branch:
   stage: test
+  unless:
+    - master
+  script:
+    - npx cypress install
+    - npm test
+  artifacts:
+    expire_in: 1 day
+    when: always
+    paths:
+      - cypress/screenshots
+      - cypress/videos
+
+cypress master:
+  stage: test
+  only:
+    - master
   script:
     - npx cypress install
     - npm run record
