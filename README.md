@@ -16,7 +16,7 @@ require('cypress-iframe');
 If you're using typescript with cypress, and have not overridden the `types` or `typeRoots` in your tsc compiler options, then everything should work.
 
 If you have overridden them, or if it otherwise doesn't work out-of-the-box, you will also either want to:
-1. Add `///<reference types="cypress-iframe" />` to the top of your cypress
+1. Add `///<reference types="cypress-iframe" />` to the top of your cypress tests in which you use the commands
 1. Add a `globals.d.ts` in the root of your `cypress` directory and add `///<reference types="cypress-iframe" />` to it
 
 ## Usage
