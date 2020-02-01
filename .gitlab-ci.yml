@@ -5,6 +5,11 @@ variables:
   CYPRESS_CACHE_FOLDER: "$CI_PROJECT_DIR/.cache/cypress"
   npm_config_cache: "$CI_PROJECT_DIR/.cache/npm"
 
+cache:
+  key: cypress-iframe
+  paths:
+    - .cache
+
 stages:
   - install
   - test
