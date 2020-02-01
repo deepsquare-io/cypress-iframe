@@ -73,3 +73,6 @@ cy.enter('#my-iframe').then(getBody => {
   getBody().contains('Some hidden element').should('not.be.visible')
 })
 ```
+
+## Caveat
+Cypress does not take snapshots of dom state inside of iframes.  Therefore, even if you are using this library, in your tests, when you hover over commands executed within an iframe, a placeholder will be displayed rather than the actual contents of the iframe when the command was executed.
