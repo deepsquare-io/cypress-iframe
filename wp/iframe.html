@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @keyframes spook {
+        0% { color: #fff; }
+        35% { color: #ddd; }
+        50% { color: #222; }
+        65% { color: #ddd; }
+        100% { color: #fff; }
+      }
+      #spooky {
+        font-weight: bold;
+        animation: spook 3s infinite;
+      }
+      .hidden {
+        display: none;
+      }
+    </style>
+    <script>
+      function onClick (e) {
+        e.preventDefault();
+        const el = document.querySelector('#spooky')
+        if (el) {
+          if (el.className === 'hidden') {
+            el.innerHTML = 'I am now visible!'
+            el.className = ''
+          } else {
+            el.innerHTML = 'I am no longer visible!'
+            el.className = 'hidden'
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <a href='#' onclick="onClick(event)">Click Me!</a>
+    <div id="spooky" class="hidden">I am hidden until the link is clicked</div>
+  </body>
+</html>

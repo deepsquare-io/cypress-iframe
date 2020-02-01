@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+      iframe {
+        flex-grow: 1;
+      }
+      #header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100px
+      }
+      .hidden {
+        display: none;
+      }
+    </style>
+    <script>
+      function onClick (e) {
+        e.preventDefault();
+        if (e.target.className === 'hidden') {
+          return
+        }
+        let el
+        switch (e.target.id) {
+          case 'link-one':
+            el = document.querySelector('#link-two')
+            break
+          case 'link-two':
+            el = document.querySelector('#link-one')
+
+        }
+        if (el) {
+          el.className = ''
+          e.target.className = 'hidden'
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="header">
+      <div>
+        <a id="link-one" href='#' onclick="onClick(event)">Am I here?</a>
+      </div>
+      <div>
+        <a id="link-two" href='#' onclick="onClick(event)" class="hidden">Or am I here?</a>
+      </div>
+    </div>
+    <iframe src="/iframe.html"></iframe>
+  </body>
+</html>
