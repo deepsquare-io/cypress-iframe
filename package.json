@@ -9,7 +9,7 @@
     "postversion": "npm publish",
     "postpublish": "git push origin --all; git push origin --tags",
     "prepare": "npm run build",
-    "build": "rm -rf dist && tsc",
+    "build": "rm -rf dist && tsc --project ./tsconfig-build.json",
     "start": "start-server-and-test wp http-get://localhost:9000 \"cypress open\"",
     "test": "start-server-and-test wp http-get://localhost:9000 \"cypress run\"",
     "record": "start-server-and-test wp http-get://localhost:9000 \"cypress run --record\"",
