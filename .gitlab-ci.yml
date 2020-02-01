@@ -22,8 +22,6 @@ cypress branch:
   stage: test
   except:
     - master
-  variables:
-    CYPRESS_INSTALL_BINARY: 0
   script:
     - npx cypress install
     - npm test
@@ -38,8 +36,6 @@ cypress master:
   stage: test
   only:
     - master
-  variables: 
-    CYPRESS_INSTALL_BINARY: "$CI_PROJECT_DIR/.cache/cypress"
   script:
     - npx cypress install
     - npm run record
