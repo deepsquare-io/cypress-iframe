@@ -20,7 +20,7 @@ install:
 
 cypress branch:
   stage: test
-  unless:
+  except:
     - master
   script:
     - npx cypress install
