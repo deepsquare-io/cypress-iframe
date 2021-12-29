@@ -3,9 +3,7 @@
 [![GitHub license](https://img.shields.io/github/license/deepsquare-io/cypress-iframe?style=flat-square)](https://github.com/deepsquare-io/cypress-iframe/blob/main/LICENSE)
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/deepsquare-io/cypress-iframe/Test?label=tests&logo=cypress&style=flat-square)](https://github.com/deepsquare-io/cypress-iframe/actions/workflows/test.yml)
 
-Adds iframe support to [Cypress](https://www.cypress.io/).
-
-## Acknowledgments
+This packages adds iframe support to [Cypress](https://www.cypress.io/).
 
 This repository is a fork of [`cypress-iframe`](https://gitlab.com/kgroat/cypress-iframe), originally created
 by [Kevin Groat](https://www.kgroat.dev/) ([kgroat](https://gitlab.com/kgroat)).
