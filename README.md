@@ -1,4 +1,7 @@
-# Cypress iframe [![install size](https://packagephobia.now.sh/badge?p=cypress-iframe)](https://packagephobia.now.sh/result?p=cypress-iframe)
+# Cypress iframe
+
+[![GitHub license](https://img.shields.io/github/license/deepsquare-io/cypress-iframe?style=flat-square)](https://github.com/deepsquare-io/cypress-iframe/blob/main/LICENSE)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/deepsquare-io/cypress-iframe/Test?label=tests&logo=cypress&style=flat-square)](https://github.com/deepsquare-io/cypress-iframe/actions/workflows/test.yml)
 
 Adds iframe support to [Cypress](https://www.cypress.io/).
 
