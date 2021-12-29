@@ -33,4 +33,4 @@ jobs:
           install: false
           build: pnpm build
           start: pnpm sandbox
-          wait-on: 'http://localhost:8080'
+          wait-on: 'http://localhost:9000'
