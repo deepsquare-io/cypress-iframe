@@ -1,4 +1,3 @@
-
 context('cypress-iframe', () => {
   it('should allow you to interact with elements in an iframe', () => {
     cy.visit('/')

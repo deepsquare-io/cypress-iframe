@@ -10,7 +10,7 @@ declare namespace Cypress {
     url?: RegExp | string
   }
 
-  interface Chainable<Subject = any> {
+  interface Chainable {
     frameLoaded: IframeHandler<JQuery<HTMLIFrameElement>>
     iframe: IframeHandler<JQuery<HTMLBodyElement>>
     enter: IframeHandler<() => Chainable<JQuery<HTMLBodyElement>>>
