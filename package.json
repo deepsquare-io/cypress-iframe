@@ -18,7 +18,8 @@
     "build:tsc": "pnpm clean && tsc",
     "sandbox": "http-server sandbox --port 9000 --silent",
     "test": "pnpm build && start-server-and-test sandbox http-get://localhost:9000 \"cypress run\"",
-    "dev": "pnpm build && start-server-and-test sandbox http-get://localhost:9000 \"cypress open\""
+    "dev": "pnpm build && start-server-and-test sandbox http-get://localhost:9000 \"cypress open\"",
+    "prepublishOnly": "pnpm build"
   },
   "repository": "deepsquare-io/cypress-iframe",
   "author": "Mathieu Bour <mathieu@csquare.ai> (https://github.com/mathieu-bour)",
