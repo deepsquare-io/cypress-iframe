@@ -9,11 +9,13 @@
     "e2e",
     "test"
   ],
+  "source": "src/index.ts",
   "main": "dist/index.js",
   "types": "index.d.ts",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "pnpm clean && tsc",
+    "build": "pnpm clean && esbuild src/index.ts --outdir=lib --sourcemap --target=es2015 --analyze",
+    "build:tsc": "pnpm clean && tsc",
     "sandbox": "http-server sandbox --port 9000 --silent",
     "test": "pnpm build && start-server-and-test sandbox http-get://localhost:9000 \"cypress run\"",
     "dev": "pnpm build && start-server-and-test sandbox http-get://localhost:9000 \"cypress open\""
@@ -33,6 +35,7 @@
   "devDependencies": {
     "@csquare/prettier-config": "^1.2.0",
     "cypress": "^9.2.0",
+    "esbuild": "^0.14.9",
     "http-server": "^14.0.0",
     "prettier": "^2.5.1",
     "rimraf": "^3.0.2",
