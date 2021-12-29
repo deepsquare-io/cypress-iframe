@@ -25,9 +25,11 @@ jobs:
         with:
           node-version: '16'
           cache: pnpm
-      - name: Install dependencies
-        run: pnpm install
+#      - name: Install dependencies
+#        run: pnpm install
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
+          install-command: pnpm install
           start: pnpm sandbox
+          wait-on: 'http://localhost:8080'

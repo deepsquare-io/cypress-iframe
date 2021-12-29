@@ -2,6 +2,13 @@
   "name": "@deepsquare/cypress-iframe",
   "version": "2.0.0",
   "description": "Adds iframe support to Cypress",
+  "keywords": [
+    "cypress",
+    "iframe",
+    "command",
+    "e2e",
+    "test"
+  ],
   "main": "dist/index.js",
   "types": "index.d.ts",
   "scripts": {
@@ -12,13 +19,6 @@
     "dev": "pnpm build && start-server-and-test sandbox http-get://localhost:9000 \"cypress open\""
   },
   "repository": "deepsquare-io/cypress-iframe",
-  "keywords": [
-    "cypress",
-    "iframe",
-    "command",
-    "e2e",
-    "test"
-  ],
   "author": "Mathieu Bour <mathieu@csquare.ai> (https://github.com/mathieu-bour)",
   "contributors": [
     {
