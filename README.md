@@ -2,6 +2,7 @@
 
 [![GitHub license](https://img.shields.io/github/license/deepsquare-io/cypress-iframe?style=flat-square)](https://github.com/deepsquare-io/cypress-iframe/blob/main/LICENSE)
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/deepsquare-io/cypress-iframe/Test?label=tests&logo=cypress&style=flat-square)](https://github.com/deepsquare-io/cypress-iframe/actions/workflows/test.yml)
+[![npm latest version](https://img.shields.io/npm/v/@deepsquare/cypress-iframe?style=flat-square)](https://www.npmjs.com/package/@deepsquare/cypress-iframe)
 
 This packages adds iframe support to [Cypress](https://www.cypress.io/).
 
