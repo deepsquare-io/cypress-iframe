@@ -1,6 +1,6 @@
 {
   "name": "@deepsquare/cypress-iframe",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Adds iframe support to Cypress",
   "keywords": [
     "cypress",
@@ -35,7 +35,7 @@
   "homepage": "https://github.com/deepsquare-io/cypress-iframe#readme",
   "devDependencies": {
     "@csquare/prettier-config": "^1.2.0",
-    "cypress": "^9.2.0",
+    "cypress": "^10.3.0",
     "esbuild": "^0.14.9",
     "http-server": "^14.0.0",
     "prettier": "^2.5.1",
@@ -44,7 +44,7 @@
     "typescript": "^4.5.4"
   },
   "peerDependencies": {
-    "cypress": "^9.2.0 || ^10.0.0"
+    "cypress": "^10.3.0"
   },
   "prettier": "@csquare/prettier-config"
 }
